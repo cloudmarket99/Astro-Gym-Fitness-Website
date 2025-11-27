@@ -1,8 +1,9 @@
 {
   "name": "astro-gym-fitness-website",
   "type": "module",
-  "private":"true",
+  "private": true,
   "version": "0.0.1",
+  "description": "A modern, responsive fitness gym website built with Astro 5.15.3 and Tailwind CSS 4.1. Features include hero section, class schedules, pricing plans, testimonials, FAQ, contact forms, and more. Perfect for gyms, fitness centers, and wellness businesses.",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

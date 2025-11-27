@@ -6,6 +6,11 @@ A modern, responsive fitness gym website built with [Astro](https://astro.build)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.16-38B2AC?logo=tailwind-css&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
 
+## 🖼️ Preview
+
+### Website Screenshot
+<img alt="AstroFlow Website Preview" src="./public/FitZone Gym - Fitness Astrojs Website Theme.png" />
+
 ## 🌟 Features
 
 - **Modern Design**: Clean, responsive UI built with Tailwind CSS
