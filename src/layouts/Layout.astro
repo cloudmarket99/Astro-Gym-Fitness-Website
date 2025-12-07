@@ -14,24 +14,25 @@ const { title = siteData.name, description = siteData.description } = Astro.prop
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/battery-monster-logo.png" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
-    
+    <meta name="keywords" content="배터리, 산업용배터리, UPS배터리, 발전기배터리, ESS, 자동차배터리, 지게차배터리, 긴급출장, 배터리교체, 밧데리몬스터" />
+
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <!-- Optimized Google Fonts -->
-    <link 
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" 
+
+    <!-- Optimized Google Fonts with Korean Support -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    
+
     <title>{title}</title>
   </head>
   <body class="bg-slate-900 text-white antialiased">

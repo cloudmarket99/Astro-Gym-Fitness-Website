@@ -1,0 +1,75 @@
+---
+import { siteData } from '@data/siteData';
+---
+
+<section class="relative min-h-screen flex items-center justify-center bg-slate-900 pt-20 overflow-hidden">
+  <div class="absolute inset-0 opacity-20">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(251,191,36,0.1),transparent_50%)]"></div>
+    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgba(251,191,36,0.1) 1px, transparent 0); background-size: 40px 40px;"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
+    <div class="text-center">
+      <div class="inline-flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/30 px-4 py-2 rounded-full mb-8">
+        <i class="ri-24-hours-line text-yellow-500 text-xl"></i>
+        <span class="text-yellow-500 font-bold text-sm">{siteData.tagline}</span>
+      </div>
+
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+        UPS, 발전기, ESS<br/>
+        <span class="text-yellow-500">긴급 상황?</span>
+      </h1>
+
+      <p class="text-xl md:text-2xl text-gray-300 mb-4 leading-relaxed max-w-4xl mx-auto">
+        365일 24시간, <span class="text-yellow-500 font-bold">1시간 내 출동</span>
+      </p>
+
+      <p class="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
+        {siteData.description}
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        <a
+          href={`tel:${siteData.phone}`}
+          class="group bg-yellow-500 hover:bg-yellow-400 text-slate-900 px-8 py-5 rounded-lg font-bold text-lg transition-all transform hover:scale-105 inline-flex items-center justify-center gap-3 shadow-lg shadow-yellow-500/20"
+        >
+          <i class="ri-phone-line text-2xl"></i>
+          <div class="text-left">
+            <div class="text-xs opacity-80">긴급 출장 전화</div>
+            <div class="text-xl">{siteData.phone}</div>
+          </div>
+        </a>
+        <a
+          href="#services"
+          class="bg-transparent border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-slate-900 px-8 py-5 rounded-lg font-bold text-lg transition-all inline-flex items-center justify-center gap-3"
+        >
+          서비스 둘러보기
+          <i class="ri-arrow-down-line"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto bg-slate-800/50 backdrop-blur-sm p-8 rounded-2xl border border-slate-700">
+        <div class="text-center">
+          <div class="text-3xl md:text-4xl font-bold text-yellow-500 mb-2">1,327+</div>
+          <div class="text-gray-300 text-sm md:text-base">설치 성공</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl md:text-4xl font-bold text-yellow-500 mb-2">20년</div>
+          <div class="text-gray-300 text-sm md:text-base">현장 노하우</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl md:text-4xl font-bold text-yellow-500 mb-2">100%</div>
+          <div class="text-gray-300 text-sm md:text-base">정품 보장</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl md:text-4xl font-bold text-yellow-500 mb-2">24/7</div>
+          <div class="text-gray-300 text-sm md:text-base">긴급 출동</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden lg:block">
+    <i class="ri-arrow-down-line text-2xl text-yellow-500"></i>
+  </div>
+</section>

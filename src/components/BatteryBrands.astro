@@ -1,0 +1,61 @@
+---
+import { brands } from '../data/siteData';
+---
+
+<section class="py-20 bg-slate-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/30 px-4 py-2 rounded-full mb-4">
+        <i class="ri-award-line text-yellow-500"></i>
+        <span class="text-yellow-500 font-bold text-sm">전국 배터리 1위 브랜드 공식 총판</span>
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">파트너 브랜드</h2>
+      <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+        국내외 최고 품질의 정품 배터리 브랜드와 함께합니다
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      {brands.map((brand) => (
+        <div class="group bg-slate-800 p-8 rounded-xl border border-slate-700 hover:border-yellow-500 transition-all text-center transform hover:scale-105">
+          <div class="bg-white rounded-lg p-6 mb-4 aspect-video flex items-center justify-center">
+            <div class="text-2xl font-bold text-slate-800">{brand.name}</div>
+          </div>
+          <div class="text-gray-300 text-sm">{brand.description}</div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-16 bg-slate-800 p-8 rounded-2xl border border-slate-700 text-center">
+      <div class="flex flex-wrap items-center justify-center gap-8">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center">
+            <i class="ri-verified-badge-fill text-yellow-500 text-2xl"></i>
+          </div>
+          <div class="text-left">
+            <div class="text-white font-bold">100% 정품 보장</div>
+            <div class="text-gray-400 text-sm">정품 인증서 제공</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center">
+            <i class="ri-box-3-fill text-yellow-500 text-2xl"></i>
+          </div>
+          <div class="text-left">
+            <div class="text-white font-bold">B2B 대규모 납품</div>
+            <div class="text-gray-400 text-sm">성공 사례 다수</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center">
+            <i class="ri-recycle-fill text-yellow-500 text-2xl"></i>
+          </div>
+          <div class="text-left">
+            <div class="text-white font-bold">폐배터리 수거</div>
+            <div class="text-gray-400 text-sm">무료 수거</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,65 @@
+---
+import { features } from '../data/siteData';
+---
+
+<section id="features" class="py-20 bg-slate-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/30 px-4 py-2 rounded-full mb-4">
+        <i class="ri-star-line text-yellow-500"></i>
+        <span class="text-yellow-500 font-bold text-sm">차별화된 4가지 약속</span>
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">왜 밧데리몬스터인가요?</h2>
+      <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+        정품, 정확, 정직. 20년 노하우의 설치 전문가가<br/>현장에 최적화된 솔루션을 제공합니다
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16">
+      {features.map((feature, index) => (
+        <div class="group bg-slate-900 p-8 lg:p-10 rounded-2xl border border-slate-700 hover:border-yellow-500 transition-all transform hover:scale-105">
+          <div class="flex items-start gap-6">
+            <div class="w-16 h-16 bg-yellow-500/10 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-yellow-500/20 transition-colors">
+              <i class={`${feature.icon} text-4xl text-yellow-500`}></i>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-white mb-3">{feature.title}</h3>
+              <p class="text-gray-300 leading-relaxed">{feature.description}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-700 text-center">
+        <div class="w-16 h-16 bg-yellow-500/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <i class="ri-flashlight-line text-3xl text-yellow-500"></i>
+        </div>
+        <div class="text-3xl font-bold text-yellow-500 mb-2">30분</div>
+        <div class="text-gray-300 text-sm">평균 출동 시간</div>
+      </div>
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-700 text-center">
+        <div class="w-16 h-16 bg-yellow-500/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <i class="ri-shield-check-line text-3xl text-yellow-500"></i>
+        </div>
+        <div class="text-3xl font-bold text-yellow-500 mb-2">0건</div>
+        <div class="text-gray-300 text-sm">설치 사고율</div>
+      </div>
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-700 text-center">
+        <div class="w-16 h-16 bg-yellow-500/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <i class="ri-trophy-line text-3xl text-yellow-500"></i>
+        </div>
+        <div class="text-3xl font-bold text-yellow-500 mb-2">Best</div>
+        <div class="text-gray-300 text-sm">고객 만족도 1위</div>
+      </div>
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-700 text-center">
+        <div class="w-16 h-16 bg-yellow-500/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <i class="ri-briefcase-line text-3xl text-yellow-500"></i>
+        </div>
+        <div class="text-3xl font-bold text-yellow-500 mb-2">B2B</div>
+        <div class="text-gray-300 text-sm">전문 파트너쉽</div>
+      </div>
+    </div>
+  </div>
+</section>
